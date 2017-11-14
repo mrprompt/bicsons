@@ -1,4 +1,3 @@
-#/usr/bin/env python3.6
 # -*- utf-8 -*-
 from totalvoice.cliente import Cliente
 from requests import get
@@ -44,11 +43,7 @@ def sms_nexmo(numero, mensagem):
 Envia o sms com o driver escolhido aleatoriamente
 """
 def sms(mensagem):
-    envios = 0;
-
     for numero in numeros:
-        result = { 'sucesso' : False }
-
         driver = random.randint(1, 2)
         
         if driver == 1:
@@ -56,14 +51,9 @@ def sms(mensagem):
         elif driver == 2:
             result = sms_nexmo(numero, mensagem)
         else:
-            print("sem driver apropriado para " + driver)
+            result = { 'sucesso' : False }
 
         print("Envio para " + numero + " : " + str(result['sucesso']))
-
-        if result['sucesso']:
-            envios += 1
-    
-    return envios
 
 """
 Função principal
