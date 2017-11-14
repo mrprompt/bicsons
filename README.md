@@ -11,7 +11,7 @@ Este projeto foi criado para fins pessoais e didáticos apenas, **sem garantias*
 **Necessário Python 3**
 
 ```
-pip install < requirements.txt
+pip install -r requirements.txt
 ``` 
 
 Crie um arquivo _.env_ na raiz do projeto e com seguintes campos:
