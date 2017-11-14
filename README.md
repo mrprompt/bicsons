@@ -8,7 +8,7 @@ Este projeto foi criado para fins pessoais e didáticos apenas, **sem garantias*
 
 ## Instalação
 
-** Necessário Python 3 **
+**Necessário Python 3**
 
 ```
 pip install < requirements.txt
