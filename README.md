@@ -4,7 +4,7 @@ Cotação dos Bitcoins por SMS
 
 ## ATENÇÃO
 
-Este projeto foi criado para fins pessoais e didáticos apenas, ** sem garantias **  e distribuído ** como está **, use por sua própria conta e risco.
+Este projeto foi criado para fins pessoais e didáticos apenas, **sem garantias**  e distribuído **como está**, use por sua própria conta e risco.
 
 ## Instalação
 

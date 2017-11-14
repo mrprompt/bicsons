@@ -10,7 +10,7 @@ load_dotenv(find_dotenv(), override=True)
 
 def bicsons():
     response = get('https://api.bitvalor.com/v1/ticker.json')
-    result = json.loads(response.tecp ..xt)
+    result = json.loads(response.text)
 
     return json.dumps(result['ticker_1h']['exchanges']['FOX'])
 
