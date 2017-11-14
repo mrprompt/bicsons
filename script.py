@@ -47,7 +47,7 @@ def sms(mensagem):
     envios = 0;
 
     for numero in numeros:
-        result = { 'sucesso' : True }
+        result = { 'sucesso' : False }
 
         driver = random.randint(1, 2)
         
