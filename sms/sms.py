@@ -2,6 +2,7 @@
 Envio de SMS
 """
 from random import randint
+from datetime import datetime
 from .driver import nexmo, totalvoice
 
 def sms(numeros, mensagem):
@@ -9,13 +10,16 @@ def sms(numeros, mensagem):
     Envia o sms com o driver escolhido aleatoriamente
     """
     for numero in numeros:
-        driver = randint(1, 2)
+        now = datetime.now().strftime("%H:%M")
 
-        if driver == 1:
-            result = totalvoice.send(numero, mensagem)
-        elif driver == 2:
-            result = nexmo.send(numero, mensagem)
-        else:
-            result = {'sucesso' : False}
+        if now in numero['horarios']:
+            driver = randint(1, 2)
 
-        print("Envio para " + numero + " : " + str(result['sucesso']))
+            if driver == 1:
+                result = totalvoice.send(numero['telefone'], mensagem)
+            elif driver == 2:
+                result = nexmo.send(numero['telefone'], mensagem)
+            else:
+                result = {'sucesso' : False}
+
+            print("Envio para " + numero['telefone'] + " : " + str(result['sucesso']))

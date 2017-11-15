@@ -1,7 +1,7 @@
 """
 Envia SMS da cotação do Bitcoin pela FoxBit
 """
-import os
+import json
 from dotenv import load_dotenv, find_dotenv
 from cotacao import bitcoin
 from sms import sms
@@ -12,7 +12,7 @@ def main():
     """
     Função principal
     """
-    numeros = os.environ.get("NUMEROS").split(",")
+    numeros = json.load(open("numeros.json"))
 
     sms.sms(numeros, bitcoin.load('FOX'))
 
