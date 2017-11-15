@@ -46,7 +46,7 @@ python script.py
 ## Exemplo de crontab
 
 ```console
-0 8,11,15,18,21 * * * echo 'cd /srv/app/bicsons; source venv/bin/activate; python script.py; deactivate' | /bin/bash >/dev/null 2>&1
+* 8-21 * * * echo 'cd /srv/app/bicsons; source venv/bin/activate; python script.py; deactivate' | /bin/bash >/dev/null 2>&1
 ```
 
 ## Licença
