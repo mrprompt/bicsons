@@ -16,4 +16,5 @@ def main():
 
     sms.sms(numeros, bitcoin.load('FOX'))
 
-main()
+if __name__ == "__main__":
+    main()
