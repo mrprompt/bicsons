@@ -39,14 +39,10 @@ Crie um arquivo _numeros.json_ na raiz do projeto com a seguinte estrutura:
 
 ## Uso
 
-```console
-python script.py
-```
-
-## Exemplo de crontab
+Suba o daemon passando o caminho completo do arquivo de números.
 
 ```console
-* 8-21 * * * echo 'cd /srv/app/bicsons; source venv/bin/activate; python script.py; deactivate' | /bin/bash >/dev/null 2>&1
+python script.py `pwd`/numeros.json
 ```
 
 ## Licença
