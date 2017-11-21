@@ -3,12 +3,11 @@ Envia SMS da cotação do Bitcoin pela FoxBit
 """
 import json
 import time
-import os
+import sys
 from dotenv import load_dotenv, find_dotenv
 from cotacao import bitcoin
 from sms import sms
 from daemons import daemonizer
-from os.path import abspath, exists
 
 load_dotenv(find_dotenv(), override=True)
 
