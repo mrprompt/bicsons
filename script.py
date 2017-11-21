@@ -25,6 +25,6 @@ def main(agenda, exchange="FOX"):
 
 if __name__ == "__main__":
     numeros = sys.argv[1]
-    exchange = sys.argv[2]
+    exchange = str(sys.argv[2])
     
-    main(numeros, exchange)
+    main(numeros, exchange.upper)
