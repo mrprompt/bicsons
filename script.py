@@ -7,11 +7,9 @@ import sys
 from dotenv import load_dotenv, find_dotenv
 from cotacao import bitcoin
 from sms import sms
-from daemons import daemonizer
 
 load_dotenv(find_dotenv(), override=True)
 
-@daemonizer.run(pidfile="/tmp/bicsons.pid")
 def main(agenda, exchange="FOX"):
     """
     Função principal
@@ -25,6 +23,6 @@ def main(agenda, exchange="FOX"):
 
 if __name__ == "__main__":
     numeros = sys.argv[1]
-    exchange = str(sys.argv[2])
-    
-    main(numeros, exchange.upper)
+    exchange = str(sys.argv[2]).upper
+
+    main(numeros, exchange)
