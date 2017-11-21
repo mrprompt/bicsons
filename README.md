@@ -39,7 +39,7 @@ Crie um arquivo _numeros.json_ na raiz do projeto com a seguinte estrutura:
 
 ## Uso
 
-Suba o daemon passando o caminho completo do arquivo de números.
+Rode o script passando o caminho completo do arquivo de números.
 
 ```console
 python script.py `pwd`/numeros.json [exchange]
