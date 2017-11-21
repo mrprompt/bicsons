@@ -42,7 +42,28 @@ Crie um arquivo _numeros.json_ na raiz do projeto com a seguinte estrutura:
 Suba o daemon passando o caminho completo do arquivo de números.
 
 ```console
-python script.py `pwd`/numeros.json
+python script.py `pwd`/numeros.json [exchange]
+```
+
+## Exchanges
+
+* ARN: Arena Bitcoin
+* B2U: BitcoinToYou
+* BAS: Basebit
+* BIV: Bitinvest
+* BSQ: Bitsquare
+* BTD: BitcoinTrade
+* FLW: flowBTC
+* FOX: FoxBit (padrão)
+* LOC: LocalBitcoins
+* MBT: Mercado Bitcoin
+* NEG: Negocie Coins
+* PAX: Paxful
+
+## Exemplo
+
+```console
+python script.py `pwd`/numeros.json FOX
 ```
 
 ## Licença

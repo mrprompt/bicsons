@@ -12,18 +12,19 @@ from daemons import daemonizer
 load_dotenv(find_dotenv(), override=True)
 
 @daemonizer.run(pidfile="/tmp/bicsons.pid")
-def main(agenda):
+def main(agenda, exchange="FOX"):
     """
     Função principal
     """
     while True:
         numeros = json.load(open(agenda))
 
-        sms.sms(numeros, bitcoin.load('FOX'))
+        sms.sms(numeros, bitcoin.load(exchange))
 
         time.sleep(60)
 
 if __name__ == "__main__":
     numeros = sys.argv[1]
+    exchange = sys.argv[2]
     
-    main(numeros)
+    main(numeros, exchange)
