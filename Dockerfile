@@ -1,5 +1,7 @@
 FROM python:3
 
+ENV TZ="America/Sao_Paulo"
+
 WORKDIR /usr/src/bicsons
 
 COPY requirements.txt ./
