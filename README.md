@@ -27,7 +27,8 @@ Crie um arquivo _numeros.json_ na raiz do projeto com a seguinte estrutura:
     {
         "nome": "Thiago",
         "telefone": "48123456789",
-        "horarios": ["09:00", "11:00", "15:00", "18:00", "21:00"]
+        "horarios": ["09:00", "11:00", "15:00", "18:00", "21:00"],
+        "exchanges": ["FOX"],
     }
 ]
 ```
@@ -42,7 +43,7 @@ Crie um arquivo _numeros.json_ na raiz do projeto com a seguinte estrutura:
 Rode o script passando o caminho completo do arquivo de números.
 
 ```console
-python script.py `pwd`/numeros.json [exchange]
+python script.py `pwd`/numeros.json
 ```
 
 ## Exchanges
@@ -59,12 +60,6 @@ python script.py `pwd`/numeros.json [exchange]
 * MBT: Mercado Bitcoin
 * NEG: Negocie Coins
 * PAX: Paxful
-
-## Exemplo
-
-```console
-python script.py `pwd`/numeros.json FOX
-```
 
 ## Licença
 
