@@ -55,7 +55,7 @@ python script.py `pwd`/numeros.json
 * BSQ: Bitsquare
 * BTD: BitcoinTrade
 * FLW: flowBTC
-* FOX: FoxBit (padrão)
+* FOX: FoxBit
 * LOC: LocalBitcoins
 * MBT: Mercado Bitcoin
 * NEG: Negocie Coins
